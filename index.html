@@ -10,7 +10,7 @@
   <meta name="author" content="TA4AQG - Erkin Mercan">
   <link rel="icon" href="img/favicon.png" type="image/x-icon">
   <title>APRS-Şifre Üretici</title>
-  <link rel="stylesheet" href="sytles.css">
+  <link rel="stylesheet" href="src/sytles.css">
 </head>
 <body>
   <!-- <div class="background-image"></div> -->
@@ -22,7 +22,7 @@
     
     <main>
         <label for="inputText">Çağrı İşaretiniz</label>
-        <input type="text" id="inputText" name="callsign" value="" placeholder="Örn. TA4AQG" required />
+        <input type="text" id="inputText" name="callsign" value="" placeholder="Örn. TA4AQG"  maxlength="9" required />
         <button onclick="calculatePassword()">Şifre Oluştur</button>
       </form>
 
@@ -65,7 +65,7 @@
   </div>
 
   <!--  Script Baş  -->
-  <script src="script.js"></script>
+  <script src="src/script.js"></script>
   <!-- Script Son-->
  
 </body>
