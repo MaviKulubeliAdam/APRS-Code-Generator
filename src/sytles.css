@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  background: url('img/earth.jpg') center/cover no-repeat fixed; /* Arka plan resmi */
+  background: url('../img/earth.jpg') center/cover no-repeat fixed; /* Arka plan resmi */
   min-height: 100vh; /* Minimum ekran yüksekliği kadar uzat */
   display: flex;
   justify-content: center; /* İçeriği yatayda tam ortala */
