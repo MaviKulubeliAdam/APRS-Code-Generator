@@ -1,0 +1,191 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background: url('img/earth.jpg') center/cover no-repeat fixed; /* Arka plan resmi */
+  min-height: 100vh; /* Minimum ekran yüksekliği kadar uzat */
+  display: flex;
+  justify-content: center; /* İçeriği yatayda tam ortala */
+  align-items: center; /* İçeriği dikeyde ortala */
+}
+
+.container {
+  width: 80%; /* İçeriğin genişliği */
+  max-width: 600px; /* Maksimum genişlik */
+  margin: 0 auto; /* Sayfayı yatayda ortala */
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Saydamlık eklemek için */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center; /* İçeriği yatayda ortala */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+main {
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8); /* Saydamlık eklemek için */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left; /* Metni sola hizala */
+}
+
+input[type="text"] {
+  padding: 12px;
+  margin-bottom: 10px; /* Alt boşluğu düşür */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Animasyonlar için geçiş efektleri ekle */
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Butonun boyutunu büyüt */
+}
+
+#output {
+  margin-top: 20px;
+}
+
+#output input[type="text"] {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: bold; /* Kalın font ağırlığı ekle */
+  color: #777;
+  text-align: center; /* Metni ortala */
+}
+
+.footer hr {
+  margin: 20px 0; /* Üst ve alt boşluk ver */
+  border: none;
+  border-top: 1px solid #ccc; /* Çizgi rengi ve stilini belirle */
+}
+
+
+/* Nasıl Kullanılır ? bölümü */
+#nasil-kullanilir {
+  /* margin-top: 20px; */
+  text-align: center; /* Metni ortala */
+}
+
+#nasil-kullanilir h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#nasil-kullanilir p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#nasil-kullanilir ol {
+  font-size: 16px;
+  margin-left: 20px;
+  text-align: left; /* Metni sola hizala */
+}
+
+
+/* varsayılan bağlantı stilleri */
+.dis-link {
+  text-decoration: none; /* Altı çiziyi kaldır */
+  color: #007bff; /* Bağlantı rengi (örnek olarak mavi) */
+}
+
+/* bağlantının üzerine gelindiğinde rengin değişmemesi */
+.dis-link:hover {
+  color: #007bff; /* Bağlantı rengi (örnek olarak mavi) */
+}
+
+.github-logo {
+  width: 65px; /* İstenilen genişlik */
+  height: 30px; /* İstenilen yükseklik */
+  margin-top: 15px;; /* Üst boşluk */
+}
+
+.panel {
+  display: flex;
+  justify-content: space-between; /* Bölümleri yatayda eşit aralıklı olarak yerleştir */
+}
+
+.panel section {
+  flex-basis: calc(50% - 10px); /* %50 genişlik, aralarında 10px boşluk bırak */
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Nasıl Kullanılır ? ve Hakkında bölümleri için ortak stil */
+.panel h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.panel p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Mobil cihazlar için stil düzenlemeleri */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Genişliği daha dar yap */
+    padding: 20px; /* Boşlukları artır */
+  }
+
+  .panel {
+    flex-direction: column; /* Bölümleri yığın şeklinde düzenle */
+  }
+
+  .panel section {
+    flex: 1; /* Bölümlerin genişliği eşit olsun */
+    margin-bottom: 15px; /* Alt boşluğu azalt */
+  }
+}
+
+/* .background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: auto;
+  z-index: -1;
+  background: url('img/ta4aqg-logo.jpg') left top/cover no-repeat fixed;
+  opacity: 0.5;
+} */
