@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="APRS, Aprs Droid, amatör telsiz, ham radio ve konum bazlı telsiz ile ilgili bilgiler. Aprs Droid şifre üretici ve kod oluşturucu hakkında detaylar.">
+  <meta name="keywords" content="APRS, Aprs Droid, aprs droid şifre üretici, aprs dorid code generator, amatör telsiz, ham radio, amateur radio, telsiz, konum, gps, position">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="TA4AQG - Erkin Mercan">
+
+
+  <title>APRS-Şifre Üretici</title>
+  <link rel="stylesheet" href="sytles.css">
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>APRS Şifre Üretici</h1>
+    </header>
+    
+    <main>
+        <label for="inputText">Çağrı İşaretiniz</label>
+        <input type="text" id="inputText" name="callsign" value="" placeholder="Örn. TA4AQG" required />
+        <button onclick="calculatePassword()">Şifre Oluştur</button>
+      </form>
+
+
+      <div id="output" class="hidden">
+        <label for="generatedPassword">APRS Şifreniz:</label>
+        <input type="text" id="generatedPassword" maxlength="10" value="" readonly>
+      </div>
+
+    </main>
+
+    <div class="footer">
+      <a href="https://ta4aqg.erkinmercan.com.tr" target="_blank" class="dis-link">SP9AQG/TA4AQG</a> 
+      <a href="https://erkinmercan.com.tr" target="_blank" class="dis-link">Erkin Mercan</a> tarafından hazırlanmıştır.
+      <br>
+      <a href="https://github.com" target="_blank"> 
+      <img src="img/github.png" alt="GitHub Logo"  href="test" class="github-logo"></a>
+      </div>
+      
+    <main>
+    <div class="panel">
+    <section id="nasil-kullanilir">
+      <h2>Nasıl Kullanılır ?</h2>
+      <p>Şifre üreticiyi kullanmak için aşağıdaki adımları izleyebilirsiniz:</p>
+      <ol>
+        <li>Çağrı işaretinizi girin.</li>
+        <li>Şifre Oluştur düğmesine tıklayın.</li>
+        <li>Oluşturulan şifreyi (aprs droid vb.) uygulamalarda kullanın.</li>
+      </ol>
+    </section>
+
+    <section id="hakkinda">
+      <h2>Hakkında</h2>
+      <p>Bu araç sayesinde APRS Droid vb. uygulamalarda kullanılan APRS-IS ağı için şifre oluşturabilirsiniz.</p>
+      <p>Aracın kötüye kullanılması sizin açınızdan ciddi hukuki sonuçlar doğurabilir.</p>
+    </section>
+
+  </div>
+  </main>
+  </div>
+
+  <!--  Script Baş  -->
+  <script src="script.js"></script>
+  <!-- Script Son-->
+ 
+</body>
+</html>
