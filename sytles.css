@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  background: url('img/aprs.jpeg') center/cover no-repeat fixed; /* Arka plan resmi */
+  background: url('img/earth.jpg') center/cover no-repeat fixed; /* Arka plan resmi */
   min-height: 100vh; /* Minimum ekran yüksekliği kadar uzat */
   display: flex;
   justify-content: center; /* İçeriği yatayda tam ortala */
@@ -178,3 +178,14 @@ button:hover {
     margin-bottom: 15px; /* Alt boşluğu azalt */
   }
 }
+
+/* .background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: auto;
+  z-index: -1;
+  background: url('img/ta4aqg-logo.jpg') left top/cover no-repeat fixed;
+  opacity: 0.5;
+} */
