@@ -1,4 +1,4 @@
-<a href="https://aprsgen.erkinmercan.com.tr" target="_blank"> Demo </a>
+<a href="https://mavikulubeliadam.github.io/APRS-Code-Generator/" target="_blank"> Demo </a>
 
 # APRS Code Generator
  
